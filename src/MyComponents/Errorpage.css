@@ -1,0 +1,104 @@
+/* High-Tech Error Page Styles */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.high-tech-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+.error-content {
+  z-index: 10;
+}
+
+.error-code {
+  font-size: 120px;
+  font-weight: bold;
+  color: #0fbcf9;
+  text-shadow: 0 0 20px #0fbcf9, 0 0 40px #0fbcf9;
+}
+
+.error-message {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.error-description {
+  font-size: 16px;
+  color: #d1d1d1;
+  margin: 20px 0;
+}
+
+.error-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #0fbcf9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.error-button:hover {
+  background: #3c40c6;
+  box-shadow: 0 0 10px #0fbcf9, 0 0 20px #3c40c6;
+}
+
+/* Glow Effects */
+.glow-circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(251, 6, 6, 0.2);
+  border-radius: 50%;
+  top: 20%;
+  left: 10%;
+  animation: pulse 3s infinite;
+}
+
+.glow-line {
+  position: absolute;
+  width: 3px;
+  height: 80%;
+  background: linear-gradient(to bottom, #0fbcf9, transparent);
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: flicker 1.5s infinite alternate;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

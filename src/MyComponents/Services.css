@@ -1,0 +1,39 @@
+.services-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: transparent;
+  min-height: 80vh;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.service-item {
+  background-color: blue;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+}

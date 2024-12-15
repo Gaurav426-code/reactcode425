@@ -1,0 +1,64 @@
+/* src/components/Header.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: #1e1e2f;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00bcd4;
+    float: left;
+  }
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 50px;
+    padding: 0;
+  }
+  
+  .nav ul  li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    top: 200px;
+  }
+  
+  .nav ul :hover {
+    color: #61dafb;
+    cursor: pointer;
+  
+  }
+  
+
+ .search-box {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+  
+  .search-box input {
+    border: none;
+    background: none;
+    color: #fff;
+    outline: none;
+    margin-left: 8px;
+  }
+  
+  .search-icon {
+    color: #aaa;
+  }
+  
+  
